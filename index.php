@@ -6,9 +6,7 @@
         <meta charset=utf-8>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Martabak Joeragan Baros</title>
-        <!-- Load Roboto font -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <!-- Load css styles -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -19,7 +17,6 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
-        <!-- Fav and touch icons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
@@ -33,13 +30,10 @@
                 <div class="container">
                     <a href="#" class="brand">
                         <img src="images/logo.png" width="90" height="40" alt="Logo" style="padding-top: 10px;"/>
-                        <!-- This is website logo -->
                     </a>
-                    <!-- Navigation button, visible on small resolution -->
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                         <i class="icon-menu"></i>
                     </button>
-                    <!-- Main navigation -->
                     <div class="nav-collapse collapse pull-right">
                         <ul class="nav" id="top-navigation">
                             <li class="active"><a href="#home">Home</a></li>
@@ -51,20 +45,14 @@
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
-                    <!-- End main navigation -->
                 </div>
             </div>
         </div>
-        <!-- Start home section -->
         <div id="home">
-            <!-- Start cSlider -->
             <div id="da-slider" class="da-slider">
                 <div class="triangle"></div>
-                <!-- mask elemet use for masking background image -->
-                <div class="mask"></div>
-                <!-- All slides centred in container element -->
+                <div class="mask"></div>            
                 <div class="container">
-                    <!-- Start first slide -->
                     <div class="da-slide">
                         <h2 class="fittext2">Martabak Joeragan</h2>
                         <h4>TENTANG</h4>
@@ -78,8 +66,6 @@
                             <img src="images/black.jpg" alt="image01" width="320" height="320" class="img img-circle">
                         </div>
                     </div>
-                    <!-- End first slide -->
-                    <!-- Start second slide -->
                     <div class="da-slide">
                         <h2>Martabak Joeragan</h2>
                         <h4>Kualitas</h4>
@@ -93,8 +79,6 @@
                             <img src="images/2.jpg" width="320" height="320" alt="image02" class="img img-circle">
                         </div>
                     </div>
-                    <!-- End second slide -->
-                    <!-- Start third slide -->
                     <div class="da-slide">
                         <h2>Martabak Joeragan</h2>
                         <h4>Pelayanan</h4>
@@ -108,26 +92,18 @@
                             <img src="images/3.jpg" width="320" height="320" alt="image03" class="img img-circle">
                         </div>
                     </div>
-                    <!-- Start third slide -->
-                    <!-- Start cSlide navigation arrows -->
                     <div class="da-arrows">
                         <span class="da-arrows-prev"></span>
                         <span class="da-arrows-next"></span>
                     </div>
-                    <!-- End cSlide navigation arrows -->
                 </div>
             </div>
         </div>
-        <!-- End home section -->
-        <!-- Service section start -->
         <div class="section primary-section" id="service">
             <div class="container">
-                <!-- Start title section -->
                 <div class="title">
                     <h1>What We Do?</h1>
-                    <!-- Section's title goes here -->
                     <p>Kami Menyediakan Berbagai Fitur Menarik.</p>
-                    <!--Simple description for section goes here. -->
                 </div>
                 <div class="row-fluid">
                     <div class="span4">
@@ -161,9 +137,6 @@
             </div>
         </div>
         <div class="section primary-section" id="service">
-            
-        <!-- Service section end -->
-        <!-- Portfolio section start -->
         <div class="section secondary-section " id="portfolio">
             <div class="triangle"></div>
             <div class="container">
@@ -185,7 +158,6 @@
                         <a href="#noAction">Identity</a>
                     </li>
                 </ul>
-                <!-- Start details for portfolio project 1 -->
                 <div id="single-project">
                     <div id="slidingDiv" class="toggleDiv row-fluid single-project">
                         <div class="span6">
@@ -217,8 +189,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End details for portfolio project 1 -->
-                    <!-- Start details for portfolio project 2 -->
                     <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="images/Portfolio02.png" alt="project 2">
@@ -243,8 +213,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End details for portfolio project 2 -->
-                    <!-- Start details for portfolio project 3 -->
                     <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="images/Portfolio12.png" alt="project 3">
@@ -263,8 +231,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End details for portfolio project 3 -->
-                    <!-- Start details for portfolio project 4 -->
                     <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="images/pandan.jpg" alt="project 4">
@@ -295,8 +261,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End details for portfolio project 4 -->
-                    <!-- Start details for portfolio project 5 -->
                     <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="images/Portfolio04.png" alt="project 5">
@@ -317,8 +281,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End details for portfolio project 5 -->
-                    <!-- Start details for portfolio project 6 -->
                     <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="images/Portfolio15.png" alt="project 6">
@@ -337,8 +299,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End details for portfolio project 6 -->
-                    <!-- Start details for portfolio project 7 -->
                     <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="images/redvelvet.jpg" alt="project 7">
@@ -368,8 +328,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End details for portfolio project 7 -->
-                    <!-- Start details for portfolio project 8 -->
                     <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="images/Portfolio05.png" alt="project 8">
@@ -396,8 +354,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End details for portfolio project 8 -->
-                    <!-- Start details for portfolio project 9 -->
                     <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="images/Portfolio16.png" alt="project 9">
@@ -522,8 +478,6 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio section end -->
-        <!-- About us section start -->
         <div class="section primary-section" id="about">
             <div class="triangle"></div>
             <div class="container">
@@ -674,9 +628,6 @@ Menyadari Martabak adalah panganan semua kelas dan semua lidah, serta menyadari 
                 </div>
             </div>
         </div>
-        <!-- About us section end -->
-        <!-- Client section start -->
-        <!-- Client section start -->
         <div id="clients">
             <div class="section primary-section">
                 <div class="triangle"></div>
@@ -781,7 +732,6 @@ Menyadari Martabak adalah panganan semua kelas dan semua lidah, serta menyadari 
             </div>
         </div>
 		-->
-        <!-- Price section start -->
         <div id="price" class="section secondary-section">
             <div class="container">
                 <div class="title">
@@ -885,8 +835,6 @@ Menyadari Martabak adalah panganan semua kelas dan semua lidah, serta menyadari 
             </div>
         </div>
 		
-        <!-- Price section end -->
-        <!-- Newsletter section start -->
         <div class="section third-section">
             <div class="container newsletter">
                 <div class="sub-section">
@@ -912,8 +860,7 @@ Menyadari Martabak adalah panganan semua kelas dan semua lidah, serta menyadari 
                 </div>
             </div>
         </div>
-        <!-- Newsletter section end -->
-        <!-- Contact section start -->
+
         <div id="contact" class="contact">
             <div class="section secondary-section">
                 <div class="container">
@@ -992,20 +939,17 @@ Menyadari Martabak adalah panganan semua kelas dan semua lidah, serta menyadari 
                 </div>
             </div>
         </div>
-        <!-- Contact section edn -->
-        <!-- Footer section start -->
+
         <div class="footer">
             <p>&copy; Martabak Joeragan Baros<a href="#"></a><a href="http://goo.gl/NM84K2"></a></p>
         </div>
-        <!-- Footer section end -->
-        <!-- ScrollUp button start -->
+
         <div class="scrollup">
             <a href="#">
                 <i class="icon-up-open"></i>
             </a>
         </div>
-        <!-- ScrollUp button end -->
-        <!-- Include javascript -->
+
         <script src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.mixitup.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -1014,9 +958,7 @@ Menyadari Martabak adalah panganan semua kelas dan semua lidah, serta menyadari 
         <script type="text/javascript" src="js/jquery.cslider.js"></script>
         <script type="text/javascript" src="js/jquery.placeholder.js"></script>
         <script type="text/javascript" src="js/jquery.inview.js"></script>
-        <!-- Load google maps api and call initializeMap function defined in app.js -->
         <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd15HCuSlRRyR9BULeFs05YdqG7VF75oQ&sensor=false&callback=initializeMap"></script>
-        <!-- css3-mediaqueries.js for IE8 or older -->
         <!--[if lt IE 9]>
             <script src="js/respond.min.js"></script>
         <![endif]-->
