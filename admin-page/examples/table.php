@@ -8,6 +8,18 @@
 	$saran = $koneksi->query("SELECT *FROM saran");
 	$subscribed  = $koneksi->query("SELECT *FROM subscribed");
 	$no = 1;
+
+    if (isset($_GET['ids'])) {
+        $ids = $_GET['ids'];
+        $hapussaran = $koneksi->query("DELETE FROM saran WHERE Id_Saran='$ids'");
+        header("location:table.php");
+    }
+
+    if (isset($_GET['idsub'])) {
+        $idsub = $_GET['idsub'];
+        $hapussubscribed = $koneksi->query("DELETE FROM subscribed WHERE Id_Subscribed='$idsub'");
+        header("location:table.php");
+    }
 ?>
 <!doctype html>
 <html lang="en">
@@ -116,6 +128,7 @@
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Saran</th>
+                                            <th>Hapus</th>
                                         </thead>
                                         <tbody>
 										<?php
@@ -126,6 +139,8 @@
 															<td>'.$row["Nama"].'</td>
 															<td>'.$row["Email"].'</td>
 															<td class="text-primary">'.$row["Komentar"].'</td>
+                                                            <td><a href=table.php?ids='.$row['Id_Saran'].'><i class="fa fa-trash-o" aria-hidden="true"></i>
+</a></td>
 														</tr>
 													
 													';
@@ -156,6 +171,7 @@
                                             <th>No</th>
                                             <th>E-Mail</th>
                                             <th>Tanggal Subscribed</th>
+                                            <th>Hapus</th>
                                         </thead>
                                         <tbody>
                                             <?php
@@ -166,6 +182,8 @@
 															<td>'.$no.'</td>
 															<td>'.$row2['Email'].'</td>
                                                             <td>'.$row2['Tanggal'].'</td>
+                                                            <td><a href=table.php?idsub='.$row2['Id_Subscribed'].'><i class="fa fa-trash-o" aria-hidden="true"></i>
+</a></td>
 														</tr>
 													
 													';
