@@ -7,6 +7,7 @@
     }
 
     $gallery = $koneksi->query("SELECT *FROM gallery");
+    $nomor = 1;
 ?>
 
 <!doctype html>
@@ -129,13 +130,52 @@
                         </div>
                     </div>
                     <div class="row">
+                        <?php
+                            while ($row = mysqli_fetch_array($gallery,MYSQLI_ASSOC)) {
+
+                        ?>
+                        <div class="col-md-4">
+                            <div class="card gallery">
+                                <h3 class="title">Gallery <?php echo $nomor; ?></h3><br>
+                                <img src=
+                                    <?php
+                                        echo '"'.$row['Foto'].'"';
+                                    ?>
+                                 class="img-responsive" alt=<?php echo '"gallery '.$nomor.'"'; ?>/><br><br>
+                                <form action="upload-gallery.php" method="post" enctype="multipart/form-data">Select image to upload:
+                                    <input type="file" id="fileToUpload" name="gallery1" style="display:none" onchange="document.getElementById('filename').value=this.value">
+                                    <input id="filename" disabled="">
+                                    <div class="deskripsi">
+                                        <a href="#deskripsi-galerry"><i class="fa fa-plus-square" aria-hidden="true"></i> Deskripsi</a>
+                                    </div>
+                                    <input type="button" value="Pilih Gambar / File" onclick="document.getElementById('fileToUpload').click()" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary ganti" name="submit" value=<?php echo '"'.$nomor.'"'; ?>>GANTI</button>
+                                </form>
+                                <?php
+                                    if ($_SESSION['pesan-gallery'.$number] != "") {
+                                        echo '
+                                            <div class="alert alert-info" role="alert" align="center">
+                                              <strong>'.$_SESSION["pesan-gallery".$number].'</strong>
+                                            </div>
+                                        ';
+                                        $_SESSION["pesan-gallery".$number] = "";
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                        <?php
+                            $nomor++;
+                            }
+                        ?>
+
+                    <!--
                         <div class="col-md-4">
                             <div class="card gallery">
                                 <h3 class="title">Gallery 1</h3><br>
                                 <img src=
                                     <?php
-                                        while ($row1 = $gallery->fetch_assoc()) {
-                                            echo $row1['Foto'];
+                                        while ($row = mysqli_fetch_array($gallery,MYSQLI_ASSOC)) {
+                                            echo '"'.$row['Foto'].'"';
                                         }
                                     ?>
                                  class="img-responsive" alt="project 1"/><br><br>
@@ -355,6 +395,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card card-plain" id="deskripsi-galerry">
