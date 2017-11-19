@@ -10,8 +10,15 @@
 	$no = 1;
 
     if (isset($_GET['ids'])) {
-        $id = $_GET['ids'];
-        $delete = $koneksi->query("DELETE FROM saran WHERE Id_Saran='$ids'");
+        $ids = $_GET['ids'];
+        $hapussaran = $koneksi->query("DELETE FROM saran WHERE Id_Saran='$ids'");
+        header("location:table.php");
+    }
+
+    if (isset($_GET['idsub'])) {
+        $idsub = $_GET['idsub'];
+        $hapussubscribed = $koneksi->query("DELETE FROM subscribed WHERE Id_Subscribed='$idsub'");
+        header("location:table.php");
     }
 ?>
 <!doctype html>
@@ -132,7 +139,8 @@
 															<td>'.$row["Nama"].'</td>
 															<td>'.$row["Email"].'</td>
 															<td class="text-primary">'.$row["Komentar"].'</td>
-                                                            <td><a href=table.php?ids='.$row['Id_Saran'].'>[]</a></td>
+                                                            <td><a href=table.php?ids='.$row['Id_Saran'].'><i class="fa fa-trash-o" aria-hidden="true"></i>
+</a></td>
 														</tr>
 													
 													';
@@ -174,7 +182,8 @@
 															<td>'.$no.'</td>
 															<td>'.$row2['Email'].'</td>
                                                             <td>'.$row2['Tanggal'].'</td>
-                                                            <td><a href=table.php?idsub='.$row['Id_Subsribed'].'>[]</a></td>
+                                                            <td><a href=table.php?idsub='.$row2['Id_Subscribed'].'><i class="fa fa-trash-o" aria-hidden="true"></i>
+</a></td>
 														</tr>
 													
 													';
